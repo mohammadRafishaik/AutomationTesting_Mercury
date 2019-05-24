@@ -1,0 +1,21 @@
+package com.Ramya;
+
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
+public class Utils {
+	public static WebDriver driver;
+	public static void main(String[] args) {
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		File Destination=new File("C:\\Users\\TT089\\Rafi\\Selenium\\Selenium_nov6th\\Result\\Scr1.png");
+		FileUtils.copyFile(source, Destination);
+		
+		
+	}
+
+}

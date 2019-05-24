@@ -1,0 +1,23 @@
+package com.Ramya;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Darganddrop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		WebDriver driver=new FirefoxDriver();
+		driver.get("https://jqueryui.com/droppable/");
+		driver.findElement(By.xpath(".//*[@id='sidebar']/aside[1]/ul/li[2]/a")).click();
+		WebElement element=driver.findElement(By.xpath(".//*[@id='content']/iframe"));
+		driver.switchTo().frame(element);
+		
+		
+	}
+
+}

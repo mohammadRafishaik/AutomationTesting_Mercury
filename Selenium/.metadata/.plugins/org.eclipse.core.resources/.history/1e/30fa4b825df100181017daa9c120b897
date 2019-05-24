@@ -1,0 +1,13 @@
+package com.selenium;
+
+public class Actionclasses {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		WebDriver driver=new FriefoxDriver();
+		
+	}
+
+}
